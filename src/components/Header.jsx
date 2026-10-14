@@ -73,7 +73,7 @@ export const Header = ({
   const modSymbol = isMac ? '⌘' : 'Ctrl+';
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white [backdrop-filter:none] no-print">
+    <header className="sticky top-0 z-1000 border-b border-slate-200 bg-white [backdrop-filter:none] no-print">
       <div className="mx-auto flex h-[72px] max-w-[1500px] items-center justify-between gap-3 px-4 sm:px-6 xl:px-8">
         <a href="#top" className="group flex min-w-0 items-center gap-3" aria-label="Folio home">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg shadow-slate-900/10 transition-transform group-hover:-rotate-3">
@@ -85,12 +85,12 @@ export const Header = ({
           </span>
         </a>
 
-        <div className="hidden items-center gap-1 rounded-2xl border border-slate-200 bg-slate-50 p-1 lg:flex">
+        {/* <div className="hidden items-center gap-1 rounded-2xl border border-slate-200 bg-slate-50 p-1 lg:flex">
           <span className="flex items-center gap-1.5 px-2 text-[10px] font-bold uppercase tracking-[0.13em] text-slate-400"><Sparkles className="h-3.5 w-3.5" /> Start with</span>
           <button type="button" onClick={() => onLoadPreset('endless')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm" title="Photography studio sample">Photography</button>
           <button type="button" onClick={() => onLoadPreset('freelancer')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm">Freelancer</button>
           <button type="button" onClick={() => onLoadPreset('blank')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm">Blank</button>
-        </div>
+        </div> */}
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           {hasSavedDraft && <button type="button" onClick={onLoadDraft} className="hidden rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 sm:inline-flex">Restore</button>}
