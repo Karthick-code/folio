@@ -392,7 +392,7 @@ export default function App() {
 
           {/* Column 2: Sticky Live A4 Preview & PDF Export */}
           <div
-            className={`lg:col-span-5 xl:col-span-5 lg:sticky lg:top-[94px] h-auto lg:max-h-[calc(100vh-110px)] ${
+            className={`lg:col-span-5 xl:col-span-5 lg:sticky lg:top-[120px] h-auto lg:max-h-[calc(100vh-136px)] ${
               mobileTab === 'preview' ? 'block' : 'hidden lg:block'
             }`}
           >
