@@ -73,7 +73,7 @@ export const Header = ({
   const modSymbol = isMac ? '⌘' : 'Ctrl+';
 
   return (
-    <header className="sticky top-0 z-1 border-b border-slate-200 bg-white [backdrop-filter:none] no-print">
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white [backdrop-filter:none] no-print">
       <div className="mx-auto flex h-[72px] max-w-[1500px] items-center justify-between gap-3 px-4 sm:px-6 xl:px-8">
         <a href="#top" className="group flex min-w-0 items-center gap-3" aria-label="Folio home">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg shadow-slate-900/10 transition-transform group-hover:-rotate-3">
