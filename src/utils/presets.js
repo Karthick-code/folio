@@ -349,8 +349,8 @@ export function getCleanBlankPreset(currency = 'INR') {
       instructions: '',
     },
     notesTerms: {
-      notes: 'Thank you for your business.',
-      terms: 'Payment is due within 15 days.',
+      notes: '',
+      terms: '',
       signatureEnabled: false,
       signatureName: '',
       signatureRole: '',

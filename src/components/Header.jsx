@@ -1,13 +1,12 @@
 
 
 import React from 'react';
-import { Plus, RotateCcw, Bookmark, Sparkles, Command, FileText, ChevronDown } from 'lucide-react';
+import { Plus, RotateCcw, Bookmark, Command, FileText } from 'lucide-react';
 
 export const Header = ({
   onNewInvoice,
   onReset,
   onSaveDraft,
-  onLoadPreset,
   hasSavedDraft,
   onLoadDraft,
   onOpenShortcuts,
@@ -24,16 +23,9 @@ export const Header = ({
           </span>
           <span className="min-w-0">
             <span className="block text-[19px] font-bold leading-5 tracking-[-0.045em] text-slate-950">folio<span className="text-indigo-600">.</span></span>
-            <span className="mt-1 hidden text-[10px] font-semibold uppercase tracking-[0.17em] text-slate-500 sm:block">Invoice studio</span>
+            <span className="mt-1 hidden text-[10px] font-semibold tracking-wide text-slate-500 sm:block">Create your bills, beautifully.</span>
           </span>
         </a>
-
-        {/* <div className="hidden items-center gap-1 rounded-2xl border border-slate-200 bg-slate-50 p-1 lg:flex">
-          <span className="flex items-center gap-1.5 px-2 text-[10px] font-bold uppercase tracking-[0.13em] text-slate-400"><Sparkles className="h-3.5 w-3.5" /> Start with</span>
-          <button type="button" onClick={() => onLoadPreset('endless')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm" title="Photography studio sample">Photography</button>
-          <button type="button" onClick={() => onLoadPreset('freelancer')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm">Freelancer</button>
-          <button type="button" onClick={() => onLoadPreset('blank')} className="rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-white hover:text-slate-950 hover:shadow-sm">Blank</button>
-        </div> */}
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           {hasSavedDraft && <button type="button" onClick={onLoadDraft} className="hidden rounded-xl px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 sm:inline-flex">Restore</button>}
@@ -45,14 +37,6 @@ export const Header = ({
           </button>
           {onOpenShortcuts && <button type="button" onClick={onOpenShortcuts} className="hidden h-9 w-9 items-center justify-center rounded-xl text-slate-400 transition hover:bg-slate-100 hover:text-slate-800 md:inline-flex" title="Keyboard shortcuts"><Command className="h-4 w-4" /></button>}
           <button type="button" onClick={onReset} className="hidden h-9 w-9 items-center justify-center rounded-xl text-slate-400 transition hover:bg-rose-50 hover:text-rose-600 sm:inline-flex" title="Reset invoice"><RotateCcw className="h-4 w-4" /></button>
-        </div>
-      </div>
-      <div className="border-t border-slate-100 bg-white px-4 py-2 lg:hidden">
-        <div className="mx-auto flex max-w-[1500px] items-center gap-2 overflow-x-auto text-xs">
-          <span className="shrink-0 font-semibold text-slate-400">QUICK START</span>
-          <button type="button" onClick={() => onLoadPreset('endless')} className="shrink-0 rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-medium text-slate-600">Photography</button>
-          <button type="button" onClick={() => onLoadPreset('freelancer')} className="shrink-0 rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-medium text-slate-600">Freelancer</button>
-          <button type="button" onClick={() => onLoadPreset('blank')} className="shrink-0 rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-medium text-slate-600">Blank invoice</button>
         </div>
       </div>
     </header>

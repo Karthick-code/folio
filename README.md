@@ -1,4 +1,4 @@
-# Folio — Invoice Studio
+# FolioInvoices
 
 Folio is a browser-based invoice generator for freelancers, studios, consultants, contractors, and small businesses. Build an invoice with live preview, switch between professional templates, and export a polished A4 PDF.
 

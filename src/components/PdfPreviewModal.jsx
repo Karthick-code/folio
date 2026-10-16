@@ -14,7 +14,7 @@ export const PdfPreviewModal = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-stone-900/50 p-2 sm:p-4 animate-in fade-in duration-150 [@media(max-height:700px)]:p-0">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-stone-900/35 backdrop-blur-md p-2 sm:p-4 animate-in fade-in duration-150 [@media(max-height:700px)]:p-0">
       <div className="bg-[#FAF9F6] rounded-2xl shadow-2xl max-w-4xl w-full h-full max-h-full lg:h-[92vh] flex flex-col border border-stone-200/90 overflow-hidden [@media(max-height:700px)]:!h-full [@media(max-height:700px)]:!max-h-full [@media(max-height:700px)]:rounded-none">
         {/* Top bar */}
         <div className="flex items-center justify-between px-6 py-3.5 bg-white border-b border-stone-200 text-stone-900 shrink-0">
